@@ -10,6 +10,9 @@
   <!--  子模块-->
   <modules>
     <module>factory-method-pattern</module>
+      <module>singleton-pattern</module>
+    <module>abstract-factory-pattern</module>
+    <module>builder-pattern</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
