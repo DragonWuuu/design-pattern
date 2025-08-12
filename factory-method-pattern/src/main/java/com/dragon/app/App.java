@@ -8,7 +8,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        log.info("Hello World!");
+        // 原本方法获取一本软件工程书
+        Book originBook = new Book();
+        originBook.setName("Software Engineering Book");
+        originBook.setAuthor("Software Engineering Author");
+
+        // 使用工厂方法获取一本软件工程书
+        BookFactory factory = new SoftwareEngineeringBookFactory();
+        Book factoryBook = factory.createBook();
     }
 }
