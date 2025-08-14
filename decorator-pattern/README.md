@@ -1,0 +1,9 @@
+# 装饰器模式
+装饰器模式是一种结构型设计模式，它允许你动态地给一个对象添加一些额外的职责。就增加功能来说，装饰器模式相比生成子类更为灵活。
+
+# 示例
+在本项目中，存在一个基础的组件接口Component，以及一个具体的组件实现类ConcreteComponent。
+我们要使用装饰器模式来给ConcreteComponent类添加新的功能，为了更好的使用装饰器模式，我们设计一个装饰器的基类ComponentDecorator。
+ComponentDecorator类组合了Component接口，并且在构造函数中接收一个Component对象。
+当我们需要给ConcreteComponent类添加新的功能时，我们可以继承ComponentDecorator类，并在子类中实现新的功能。
+在本项目中，我们设计了一个日志装饰器LogConcreteComponent，它继承了ComponentDecorator类，并且在operation方法中添加了日志功能。
